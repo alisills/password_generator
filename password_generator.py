@@ -5,7 +5,8 @@ import secrets
 #variables
 alphabet = string.ascii_letters + string.digits + string.punctuation 
 password = ''
-length = range(16)
+password_length = input('How many characters would you like in your password? ')
+length = range(int(password_length))
 
 #Create 16 character password
 for i in length:
